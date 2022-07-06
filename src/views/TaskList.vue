@@ -64,6 +64,7 @@ export default {
   },
   mounted() {
     this.tasks = JSON.parse(localStorage.getItem(LOCAL_STRAGE_KEY_TASKS));
+    if (this.tasks === null) this.tasks = [];
   },
 };
 </script>
